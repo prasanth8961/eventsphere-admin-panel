@@ -70,7 +70,7 @@ A modern and intuitive **web-based administrative interface** for **Events-Spher
 ## ⚙️ Installation
 Clone the repository:
 ```bash
-git clone https://github.com/Events-Sphere/events-sphere-admin-panel.git
+git clone https://github.com/prasanth8961/events-sphere-admin-panel.git
 cd events-sphere-admin-panel
 
 ```
