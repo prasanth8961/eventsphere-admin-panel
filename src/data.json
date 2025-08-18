@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "mobile_number": "123-456-7890",
+    "college_name": "Example University",
+    "location": "New York, NY",
+    "status": true
+  },
+  {
+    "id": 2,
+    "username": "janedoe",
+    "email": "janedoe@example.com",
+    "mobile_number": "234-567-8901",
+    "college_name": "Sample College",
+    "location": "Los Angeles, CA",
+    "status": false
+  },
+  {
+    "id": 3,
+    "username": "alicew",
+    "email": "alicew@example.com",
+    "mobile_number": "345-678-9012",
+    "college_name": "University of Somewhere",
+    "location": "Chicago, IL",
+    "status": true
+  },
+  {
+    "id": 4,
+    "username": "bobsmith",
+    "email": "bobsmith@example.com",
+    "mobile_number": "456-789-0123",
+    "college_name": "Tech Institute",
+    "location": "Houston, TX",
+    "status": false
+  },
+  {
+    "id": 5,
+    "username": "charliebrown",
+    "email": "charliebrown@example.com",
+    "mobile_number": "567-890-1234",
+    "college_name": "State University",
+    "location": "Phoenix, AZ",
+    "status": true
+  },
+
+  {
+    "id": 6,
+    "username": "davidjohnson",
+    "email": "davidjohnson@example.com",
+    "mobile_number": "678-901-2345",
+    "college_name": "Community College",
+    "location": "San Francisco, CA",
+    "status": true
+  },
+  {
+    "id": 7,
+    "username": "emilydavis",
+    "email": "emilydavis@example.com",
+    "mobile_number": "789-012-3456",
+    "college_name": "National University",
+    "location": "Dallas, TX",
+    "status": false
+  },
+  {
+    "id": 8,
+    "username": "frankmiller",
+    "email": "frankmiller@example.com",
+    "mobile_number": "890-123-4567",
+    "college_name": "City College",
+    "location": "Miami, FL",
+    "status": true
+  },
+  {
+    "id": 9,
+    "username": "gracelee",
+    "email": "gracelee@example.com",
+    "mobile_number": "901-234-5678",
+    "college_name": "Tech University",
+    "location": "Atlanta, GA",
+    "status": false
+  },
+  {
+    "id": 10,
+    "username": "hannahwilson",
+    "email": "hannahwilson@example.com",
+    "mobile_number": "012-345-6789",
+    "college_name": "International University",
+    "location": "Boston, MA",
+    "status": true
+  },
+  {
+    "id": 11,
+    "username": "ianmartin",
+    "email": "ianmartin@example.com",
+    "mobile_number": "123-456-7890",
+    "college_name": "Regional College",
+    "location": "Seattle, WA",
+    "status": false
+  },
+  {
+    "id": 12,
+    "username": "juliawhite",
+    "email": "juliawhite@example.com",
+    "mobile_number": "234-567-8901",
+    "college_name": "Local University",
+    "location": "Denver, CO",
+    "status": true
+  },
+  {
+    "id": 13,
+    "username": "kevinbrown",
+    "email": "kevinbrown@example.com",
+    "mobile_number": "345-678-9012",
+    "college_name": "Private Institute",
+    "location": "San Diego, CA",
+    "status": false
+  },
+  {
+    "id": 14,
+    "username": "lindamoore",
+    "email": "lindamoore@example.com",
+    "mobile_number": "456-789-0123",
+    "college_name": "Public College",
+    "location": "Las Vegas, NV",
+    "status": true
+  },
+  {
+    "id": 15,
+    "username": "michaelclark",
+    "email": "michaelclark@example.com",
+    "mobile_number": "567-890-1234",
+    "college_name": "State Institute",
+    "location": "Portland, OR",
+    "status": false
+  },
+  {
+    "id": 16,
+    "username": "nancyadams",
+    "email": "nancyadams@example.com",
+    "mobile_number": "678-901-2345",
+    "college_name": "Urban University",
+    "location": "New York, NY",
+    "status": true
+  },
+  {
+    "id": 17,
+    "username": "oliverjones",
+    "email": "oliverjones@example.com",
+    "mobile_number": "789-012-3456",
+    "college_name": "West Coast College",
+    "location": "Los Angeles, CA",
+    "status": false
+  },
+  {
+    "id": 18,
+    "username": "paulking",
+    "email": "paulking@example.com",
+    "mobile_number": "890-123-4567",
+    "college_name": "Eastside Institute",
+    "location": "Chicago, IL",
+    "status": true
+  },
+  {
+    "id": 19,
+    "username": "quinnmartinez",
+    "email": "quinnmartinez@example.com",
+    "mobile_number": "901-234-5678",
+    "college_name": "Northern University",
+    "location": "Houston, TX",
+    "status": false
+  },
+  {
+    "id": 20,
+    "username": "rachelroberts",
+    "email": "rachelroberts@example.com",
+    "mobile_number": "012-345-6789",
+    "college_name": "Southern College",
+    "location": "Phoenix, AZ",
+    "status": true
+  }
+]

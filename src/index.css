@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg : #F5F5F5;
+
+  /* ===== Brand Colors ===== */
+  --color-primary: #0f2a2b;
+  --color-primary-light: #1f3f40;
+  --color-primary-dark: #081819;
+
+  --color-secondary: #3b82f6;
+  --color-secondary-light: #60a5fa;
+  --color-secondary-dark: #1e40af;
+
+  /* ===== Accent Colors ===== */
+  --color-accent-blue: #00b4d8;
+  --color-accent-green: #38b000;
+  --color-accent-yellow: #ffb703;
+  --color-accent-orange: #fb8500;
+  --color-accent-purple: #7b2cbf;
+  --color-accent-pink: #ff5d8f;
+
+  /* ===== Semantic Colors ===== */
+  --color-success: #16a34a;
+  --color-warning: #eab308;
+  --color-error: #dc2626;
+  --color-info: #0ea5e9;
+
+  /* ===== Grayscale / Neutral ===== */
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --color-black: #000000;
+
+  /* ===== Gradients ===== */
+  --gradient-primary: linear-gradient(90deg, #0f2a2b, #3b82f6);
+  --gradient-secondary: linear-gradient(90deg, #3b82f6, #00b4d8);
+  --gradient-success: linear-gradient(90deg, #16a34a, #38b000);
+  --gradient-warning: linear-gradient(90deg, #eab308, #fb8500);
+  --gradient-error: linear-gradient(90deg, #dc2626, #b91c1c);
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-white);
+  /* font-family: "Poppins", sans-serif; */
+  color: var(--color-gray-600);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+}
+
+
+.menu {
+  @apply text-4xl;
+}
+
+.img img {
+  @apply h-60 pl-4 hover:scale-150;
+}
+
+.heading {
+  @apply text-2xl pt-1 pl-4 font-bold;
+}
+
+.table-td td {
+  @apply py-2 pl-5;
+}
+
+.paginate li a {
+  @apply text-white p-2 border-2 hover:cursor-pointer;
+  border-right-color: #2697ff; 
+}
+.paginate li a:hover {
+  background-color: #081d45; 
+}
+
+.event p span {
+  @apply font-bold;
+}
+
+.eventImage img {
+  @apply max-h-36 min-h-36 min-w-60 max-w-60 hover:scale-110 rounded;
+}
+
+
+
+@layer utilities {
+  .shimmer-bg {
+    position: relative;
+    overflow: hidden;
+    background-color: #e0e0e0; 
+  }
+
+  .shimmer-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 200%;
+    height: 100%;
+    background-image: linear-gradient(
+      135deg, 
+      #e0e0e0 0%, 
+      #f5f5f5 50%, 
+      #e0e0e0 100%
+    );
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      left: -150%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
