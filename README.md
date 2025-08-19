@@ -109,7 +109,7 @@ Navigate to http://localhost:3000 to access the admin panel locally.
 ---
 
 ### Live Demo
- - <a href="https://eventsphere-admin-panel.vercel.app/" target="_blank" rel="noopener noreferrer">admin.app</a>
+- [www.admin.app.com](https://eventsphere-admin-panel.vercel.app/)
 
 ---
 
