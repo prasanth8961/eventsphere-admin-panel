@@ -1,11 +1,5 @@
-
-const isLocalServer = false;
-
 export default class Config {
-  static localHostUrl = "http://localhost:8080/api/v1";
-  static authBaseUrl = "https://eventsphere-backend-3.onrender.com";
-  static OnlineUrl = "https://eventsphere-backend-3.onrender.com/api/v1";
-  static baseUrl = isLocalServer ? this.localHostUrl : this.OnlineUrl;
+  static baseUrl = "https://eventsphere-backend-3.onrender.com/api/v1";
   static imageBaseUrl = "https://firebasestorage.googleapis.com/v0/b/stuhub-36067.firebasestorage.app/o";
 
 
