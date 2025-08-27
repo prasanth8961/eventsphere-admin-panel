@@ -119,7 +119,7 @@ const AddCategory = () => {
 
     try {
       const response = await addCategory(data).unwrap();
-      if (response.status === true) {
+      if (response.success) {
         toast.success(response.message ?? "Category created successfully", {
           position: "top-right",
           autoClose: 1500,

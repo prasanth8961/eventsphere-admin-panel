@@ -12,26 +12,26 @@ const CategoriesList = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-      const getCategory = async () => {
-    try {
-      const response = await axiosInstance.get(Config.getAllEventCategory);
-            if (response.data.success == true && response.data.data.categories) {
-        setCategory(response.data.data.categories);
+    const getCategory = async () => {
+      try {
+        const response = await axiosInstance.get(Config.getAllEventCategory);
+        if (response.data.success == true && response.data.data.categories) {
+          setCategory(response.data.data.categories);
+        }
+      } catch (error) {
+        toast.error(error.message ?? "Something went wrong. try again!", {
+          position: "top-right",
+          autoClose: 1500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
       }
-    } catch (error) {
-      toast.error(error.message ?? "Something went wrong. try again!", {
-        position: "top-right",
-        autoClose: 1500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-        transition: Bounce,
-      });
-    } 
-  };
+    };
     getCategory();
   }, []);
 
@@ -96,7 +96,7 @@ const CategoriesList = () => {
         transition: Bounce,
       });
       setLoading(false);
-    }finally{
+    } finally {
       setLoading(false);
       setIsModalOpen(false);
     }
@@ -126,18 +126,18 @@ const CategoriesList = () => {
                 <td className="py-3 px-4">{category._id}</td>
                 <td className="py-3 px-4">
                   <img
-                    src={`${Config.categoryImgBaseUrl}${category.image}`}
+                    src={`${category.image}`}
                     alt={`${category.name}.png`}
                     className="w-16 h-16 object-cover rounded item-center"
                   />
-                </td>   
+                </td>
                 <td className="py-3 px-4">{category.name}</td>
                 <td className="py-3 px-4 text-center">
                   <div
                     onClick={() => handleEdit(category)}
                     className="flex self-center items-center gap-2 cursor-pointer justify-center"
                   >
-                    <BiEditAlt color="grey"/>
+                    <BiEditAlt color="grey" />
                     <span className="text-gray-600 font-semibold  ">EDIT</span>
                   </div>
                 </td>
@@ -171,12 +171,20 @@ const CategoriesList = () => {
                 <label className="font-semibold text-gray-600">
                   Change category image
                 </label>
-                <div className="flex items-center justify-center p-4 mt-3 border-2 border-dashed border-black rounded-lg hover:border-blue transition">
-                  <label className="flex flex-col items-center justify-center w-full h-8 cursor-pointer">
+                <div className="flex items-center justify-center p-4 mt-3 border-2 border-dashed border-black rounded-lg hover:border-blue transition h-48 w-full">
+                  <label className="flex flex-col items-center justify-center w-full h-full cursor-pointer">
                     {typeof image === "object" ? (
-                      <span className="text-sm text-black">{image.name}</span>
+                      <img
+                        src={URL.createObjectURL(image)}
+                        alt={name}
+                        className="w-full h-full object-cover rounded-lg"
+                      />
                     ) : (
-                      <span className="text-sm text-black">{image}</span>
+                      <img
+                        src={image}
+                        alt={name}
+                        className="w-full h-full object-cover rounded-lg"
+                      />
                     )}
                     <input
                       type="file"
@@ -187,6 +195,7 @@ const CategoriesList = () => {
                     />
                   </label>
                 </div>
+
               </div>
               <div className="flex justify-end space-x-4">
                 <button
