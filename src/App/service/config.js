@@ -1,5 +1,5 @@
 export default class Config {
-  static baseUrl = "https://eventsphere-backend-3.onrender.com/api/v1";
+  static baseUrl = "https://eventsphere-backend-kjlv.onrender.com/api/v1";
   static imageBaseUrl = "https://firebasestorage.googleapis.com/v0/b/stuhub-36067.firebasestorage.app/o";
 
   // static baseUrl = 'http://127.0.0.1:8080/api/v1'
