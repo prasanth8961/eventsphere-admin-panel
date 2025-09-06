@@ -13,8 +13,6 @@ A modern and intuitive **web-based administrative interface** for **Events-Spher
 - [🚀 Usage](#usage)
 - [🌍 Live Demo](#live-demo)
 - [📤 Deployment](#deployment)
-- [🤝 Contributing](#contributing)
-- [📜 License](#license)
 - [🖼 Preview](#preview)
 
 ---
@@ -88,7 +86,7 @@ cd events-sphere-admin-panel
 
 Create a .env file in the root directory:
 
-   - REACT_APP_API_URL=https://event-backend-0000.onrender.com
+   - REACT_APP_API_URL=https://eventsphere-backend-kjlv.onrender.com
    - REACT_APP_JWT_SECRET=your_jwt_secret
 
 
