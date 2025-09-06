@@ -13,7 +13,7 @@ export default defineConfig({
     proxy: {
       "/api": {
         // target: "http://127.0.0.1:8080",
-        target: "https://eventsphere-backend-3.onrender.com",
+        target: "https://eventsphere-backend-kjlv.onrender.com",
         changeOrigin: true,
       },
     },
